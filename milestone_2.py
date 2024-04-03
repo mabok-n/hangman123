@@ -22,6 +22,10 @@ guess = input('Please input your guess')
 
 # Create an if statement that checks if the length of the input is equal to 1 and the input is alphabetical.
 #In the body of the if statement, print a message that says "Good guess!".
+# isalpha() method in Python is a built-in string method that returns True if
+# all characters in the string are alphabetic (consist of only letters), and
+# the string is not empty. Otherwise, it returns False.
+
 if guess.isalpha() and len(guess) == 1:
     print(f"Good Guess! You guessed {guess}")
 
