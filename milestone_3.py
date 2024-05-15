@@ -3,13 +3,19 @@ import random
 word_list = ['apple','banana','grapes','kiwi','pineapple']
 word = random.choice(word_list)
 
+def generate_random_word():
+    word = random.choice(word_list)
+    return word
+
 #Create check guess function
 #Step 1 check guess function with guess passed in as parametre
 def check_guess(guess):
 #Step 2 convert guess to lowercase
     guess = guess.lower()
-    print(f'your guess is: {guess}')
+    print(f'You guessed the letter: {guess}')
 #Step 3 place code here to check if the guess is in the word
+    word = generate_random_word()
+    print(f'the word is {word}')
     if guess in word:
         print(f"Good guess! {guess} is in the word.")
     else:
