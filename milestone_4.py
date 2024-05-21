@@ -11,7 +11,8 @@ def generate_random_word():
     
 
 class Hangman:
-    """
+    """git checkout -- hangman_Template.py
+
     A class to represent a Hangman game.
 
     Attributes:
