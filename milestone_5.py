@@ -7,6 +7,20 @@ def generate_random_word():
     word = random.choice(word_list)
     return word
 
+def play_game(word_list):
+    num_lives = 5
+    game = Hangman(word_list,num_lives)
+    while True:
+        if game.num_lives == 0:
+            print('You lost!')
+            break
+        elif game.num_letters > 0:
+            game.ask_for_input()
+        else:
+            print('Congratulations. You won the game!')
+            break
+
+            
 
     
 
@@ -84,12 +98,10 @@ class Hangman:
                 print("Invalid letter. Please, enter a single alphabetical character")
             elif guess in self.list_of_guesses:
                 print("You have already tried this character!")
-            elif self.num_letters == 0 or self.num_lives == 0:
-                print("Game Over")
-                break
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
+                break
 
 
 

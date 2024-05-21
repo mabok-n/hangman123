@@ -49,7 +49,7 @@ python hangmangame.py
 
 
 ## File Structure
-# TO DO once project is complete
+# TO DO once project is complete add doc strings to milestone 5
 
 ## License information
 
