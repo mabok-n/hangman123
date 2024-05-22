@@ -36,7 +36,7 @@ Further reinforcing the importance of planning and iterative testing in software
 ## Installation instructions
 1. Clone or download the Hangman Game repository from [GitHub](https://github.com/mabok-n/hangman123)
 2. Download the folder Hangman123
-3. Run "Hangmangame.py" by navigating to the folder Hangman123
+3. Run "Hangman.py" by navigating to the folder Hangman123
 
 
 ## Usage
@@ -49,7 +49,9 @@ python hangmangame.py
 
 
 ## File Structure
-# TO DO once project is complete add doc strings to milestone 5
+Hangman.py- Game Script
+README.md - Details about the game
+Milestones - Python files of milestones completed whilst creating the game
 
 ## License information
 
