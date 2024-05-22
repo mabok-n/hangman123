@@ -4,13 +4,13 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 ## Table of Contents:
--Description
--Aim and Objectives
--Features
--Installation insturctions
--Usage Instructions
--File Structure
--License Information
+- Description
+- Aim and Objectives
+- Features
+- Installation insturctions
+- Usage Instructions
+- File Structure
+- License Information
 
 
 ## Description: 
@@ -49,9 +49,9 @@ python hangmangame.py
 
 
 ## File Structure
-Hangman.py- Game Script
-README.md - Details about the game
-Milestones - Python files of milestones completed whilst creating the game
+- Hangman.py: Game Script
+- README.md: Details about the game
+- Milestones:  Python files of milestones completed whilst creating the game
 
 ## License information
 
