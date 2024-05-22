@@ -7,25 +7,12 @@ def generate_random_word():
     word = random.choice(word_list)
     return word
 
-def play_game(word_list):
-    num_lives = 5
-    game = Hangman(word_list,num_lives)
-    while True:
-        if game.num_lives == 0:
-            print('You lost!')
-            break
-        elif game.num_letters > 0:
-            game.ask_for_input()
-        else:
-            print('Congratulations. You won the game!')
-            break
-
-            
 
     
 
 class Hangman:
-    """
+    """git checkout -- hangman_Template.py
+
     A class to represent a Hangman game.
 
     Attributes:
@@ -79,12 +66,16 @@ class Hangman:
         print(f'You guessed the letter: {guess}')
         
         if guess in self.word:
+            letter_count = 0
             print(f"Good guess! {guess} is in the word.")
             for index,letter in enumerate(self.word):
                 if letter == guess:
+                    letter_count += 1
                     self.word_guessed[index] = guess
-                    print(self.word_guessed)
-            self.num_letters -= 1 
+            self.num_letters -= letter_count
+            print(self.word_guessed)
+            # remove
+            print(f'{self.num_letters}') 
         else:
             self.num_lives -= 1
             print(f'Sorry, {guess} is not in the word')
@@ -98,10 +89,12 @@ class Hangman:
                 print("Invalid letter. Please, enter a single alphabetical character")
             elif guess in self.list_of_guesses:
                 print("You have already tried this character!")
+            elif self.num_letters == 0 or self.num_lives == 0:
+                print("Game Over")
+                break
             else:
                 self.check_guess(guess)
                 self.list_of_guesses.append(guess)
-                break
 
 
 
