@@ -1,9 +1,5 @@
-'''
-Make sure you complete all the TODOs in this file.
-The prints have to contain the same text as indicated, don't add any more prints,
-or you will get 0 for this assignment.
-'''
 import random
+
 
 class Hangman:
     '''
@@ -109,6 +105,12 @@ def play_game(word_list):
 
     checks if num_lives and num_letters are not == 0
     whilst these condition are not met it continously ask user for a letter
+
+    Parameters:
+        ----------
+        word_list: list
+            List of words to be used in the game
+
     """
 
     # creates a new instance of the class Hangman as game passing in word_list, num_lives as parametres
